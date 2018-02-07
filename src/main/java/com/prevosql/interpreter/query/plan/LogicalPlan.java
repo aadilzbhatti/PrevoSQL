@@ -282,7 +282,7 @@ public class LogicalPlan {
 
     /**
      * Processes a FromItem and copies any aliased table information into
-     * an aliased entry in the com.cs5321.config.catalog
+     * an aliased entry in the config.catalog
      *
      * @param fromItem Holds information about aliased table
      * @return The alias name
@@ -297,7 +297,7 @@ public class LogicalPlan {
 
     /**
      * Processes a list of join arguments and adds any alias information
-     * to the com.cs5321.config.catalog
+     * to the config.catalog
      *
      * @param joins List of join arguments
      */

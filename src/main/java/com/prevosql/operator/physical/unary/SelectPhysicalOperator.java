@@ -48,7 +48,7 @@ public class SelectPhysicalOperator extends UnaryPhysicalOperator {
     }
 
     /**
-     * Resets child com.cs5321.operator
+     * Resets child operator
      */
     @Override
     public void reset() {

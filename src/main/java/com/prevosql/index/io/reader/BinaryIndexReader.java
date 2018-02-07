@@ -36,7 +36,7 @@ public class BinaryIndexReader {
 
         } catch (FileNotFoundException e) {
             LOG.fatal(e);
-            System.err.println("Failed to load com.cs5321.index file: " + e.getMessage());
+            System.err.println("Failed to load index file: " + e.getMessage());
             System.exit(1);
         }
 
@@ -59,7 +59,7 @@ public class BinaryIndexReader {
 
         } catch (IOException e) {
             LOG.fatal(e);
-            System.err.println("Failed to read com.cs5321.index file: " + e.getMessage());
+            System.err.println("Failed to read index file: " + e.getMessage());
             System.exit(1);
         }
 
@@ -156,7 +156,7 @@ public class BinaryIndexReader {
 
         } catch (IOException e) {
             LOG.fatal(e);
-            System.err.println("Failed to read com.cs5321.index file: " + e.getMessage());
+            System.err.println("Failed to read index file: " + e.getMessage());
             System.exit(1);
         }
 

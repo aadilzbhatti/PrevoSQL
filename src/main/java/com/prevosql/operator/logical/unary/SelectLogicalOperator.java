@@ -6,15 +6,15 @@ import com.prevosql.operator.logical.leaf.ScanLogicalOperator;
 import net.sf.jsqlparser.expression.Expression;
 
 /**
- * Models select com.cs5321.operator
+ * Models select operator
  */
 public class SelectLogicalOperator extends UnaryLogicalOperator {
     private final Expression selectCondition;
 
     /**
-     * Constructs a select com.cs5321.operator
+     * Constructs a select operator
      *
-     * @param child Child com.cs5321.operator to select from
+     * @param child Child operator to select from
      *
      * @param selectCondition Condition for which to choose which items to select
      */

@@ -7,16 +7,16 @@ import net.sf.jsqlparser.statement.select.OrderByElement;
 import java.util.List;
 
 /**
- * Models a sort com.cs5321.operator
+ * Models a sort operator
  */
 public class SortLogicalOperator extends UnaryLogicalOperator {
     private final List<OrderByElement> orderByElementList;
 
     /**
-     * Constructs a sort com.cs5321.operator
+     * Constructs a sort operator
      *
-     * @param child Child com.cs5321.operator which will be sorted
-     * @param orderByElementList List of elements to sort the child com.cs5321.operator by
+     * @param child Child operator which will be sorted
+     * @param orderByElementList List of elements to sort the child operator by
      */
     public SortLogicalOperator(LogicalOperator child, List<OrderByElement> orderByElementList) {
         super(child);
@@ -29,7 +29,7 @@ public class SortLogicalOperator extends UnaryLogicalOperator {
     }
 
     /**
-     * @return List of elements to sort child com.cs5321.operator by
+     * @return List of elements to sort child operator by
      */
     public List<OrderByElement> getOrderByElementList() {
         return orderByElementList;

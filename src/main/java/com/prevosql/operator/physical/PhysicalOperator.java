@@ -20,9 +20,9 @@ public abstract class PhysicalOperator {
     }
 
     /**
-     * Initializes an com.cs5321.operator
+     * Initializes an operator
      *
-     * @param tableName Table name for com.cs5321.operator
+     * @param tableName Table name for operator
      */
     protected PhysicalOperator(String tableName) {
         this();

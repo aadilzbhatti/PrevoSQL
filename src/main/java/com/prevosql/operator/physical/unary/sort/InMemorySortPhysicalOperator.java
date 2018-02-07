@@ -21,7 +21,7 @@ public class InMemorySortPhysicalOperator extends SortPhysicalOperator {
      * Initializes SortOperator. Collects all tuples from output
      * and sorts them based on input elements
      *
-     * @param child Child com.cs5321.operator
+     * @param child Child operator
      * @param orderByElements List of elements to order by
      */
     public InMemorySortPhysicalOperator(PhysicalOperator child, List<OrderByElement> orderByElements) {
@@ -72,7 +72,7 @@ public class InMemorySortPhysicalOperator extends SortPhysicalOperator {
     }
 
     /**
-     * Resets child com.cs5321.operator
+     * Resets child operator
      */
     @Override
     public void reset() {
@@ -88,7 +88,7 @@ public class InMemorySortPhysicalOperator extends SortPhysicalOperator {
      * Gets column index in tuple based on input order by element
      *
      * @param e Input order by element
-     * @return Column com.cs5321.index in tuples
+     * @return Column index in tuples
      */
     private int getIndex(OrderByElement e) {
         Column col = (Column) e.getExpression();

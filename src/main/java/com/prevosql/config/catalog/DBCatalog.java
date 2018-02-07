@@ -41,7 +41,7 @@ public class DBCatalog extends Catalog {
     }
 
     /**
-     * Adds a logical table to the com.cs5321.config.catalog
+     * Adds a logical table to the config.catalog
      *
      * @param tableName Name of table to be added
      * @param fileName Filename referring to input data of table

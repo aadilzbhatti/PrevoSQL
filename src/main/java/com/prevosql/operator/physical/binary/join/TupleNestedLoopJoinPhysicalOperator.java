@@ -13,10 +13,10 @@ public class TupleNestedLoopJoinPhysicalOperator extends JoinPhysicalOperator {
     private Tuple saved = null;
 
     /**
-     * Initializes join com.cs5321.operator with left and right children operators
+     * Initializes join operator with left and right children operators
      *
-     * @param leftChild Left child com.cs5321.operator
-     * @param rightChild Right child com.cs5321.operator
+     * @param leftChild Left child operator
+     * @param rightChild Right child operator
      * @param joinCondition Condition for join
      */
     public TupleNestedLoopJoinPhysicalOperator(PhysicalOperator leftChild,

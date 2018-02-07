@@ -7,13 +7,13 @@ import net.sf.jsqlparser.statement.select.SelectItem;
 import java.util.List;
 
 /**
- * Models a project com.cs5321.operator
+ * Models a project operator
  */
 public class ProjectLogicalOperator extends UnaryLogicalOperator {
     private final List<SelectItem> selectItems;
 
     /**
-     * Constructs a project com.cs5321.operator
+     * Constructs a project operator
      *
      * @param child Child to project from
      * @param selectItems Items to project from child

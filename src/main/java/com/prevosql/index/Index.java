@@ -139,7 +139,7 @@ public class Index {
             curr.setNumEntries(size);
         }
 
-        // build first com.cs5321.index layer
+        // build first index layer
         int currIndexNode = currLeafPage + 1;
         int numLeafNodes = leafNodes.size();
         int numIndexChildren = 2 * order + 1;
@@ -275,7 +275,7 @@ public class Index {
 
         } catch (IOException e) {
             LOG.fatal(e);
-            System.err.println("Failed to create clustered com.cs5321.index: " + e.getMessage());
+            System.err.println("Failed to create clustered index: " + e.getMessage());
             System.exit(1);
         }
     }

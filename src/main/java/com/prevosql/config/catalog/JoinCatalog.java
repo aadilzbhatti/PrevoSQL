@@ -73,10 +73,10 @@ public class JoinCatalog extends Catalog {
     }
 
     /**
-     * Joins two tables, both from different catalogs and adds them to a new com.cs5321.config.catalog
+     * Joins two tables, both from different catalogs and adds them to a new config.catalog
      *
-     * @param leftCatalog Left com.cs5321.config.catalog
-     * @param rightCatalog Right com.cs5321.config.catalog to get new table from
+     * @param leftCatalog Left config.catalog
+     * @param rightCatalog Right config.catalog to get new table from
      * @param leftTable Left table name to join
      * @param rightTable Right table name to join
      * @return New JoinCatalog built from two input catalogs
@@ -94,7 +94,7 @@ public class JoinCatalog extends Catalog {
 
     /**
      * Joins the JoinPhysicalOperator's two tables with a new table, and builds a
-     * new com.cs5321.config.catalog with those two tables in it
+     * new config.catalog with those two tables in it
      *
      * @param catalog Input JoinCatalog
      * @param child JoinPhysicalOperator to get table names from

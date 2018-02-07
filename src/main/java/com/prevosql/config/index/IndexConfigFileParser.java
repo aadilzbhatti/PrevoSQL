@@ -48,7 +48,7 @@ public class IndexConfigFileParser {
                 while ((line = br.readLine()) != null) {
                     String[] tokens = line.split("\\s+");
                     if (tokens.length != 4) {
-                        System.err.println("Invalid com.cs5321.index info file: Invalid number of arguments: " + line);
+                        System.err.println("Invalid index info file: Invalid number of arguments: " + line);
                         System.exit(1);
                     }
                     String tableName = tokens[0];
@@ -63,7 +63,7 @@ public class IndexConfigFileParser {
                 }
 
             } catch (Exception e) {
-                System.err.println("Failed to read com.cs5321.index info file: " + e.getMessage());
+                System.err.println("Failed to read index info file: " + e.getMessage());
                 System.exit(1);
             }
 

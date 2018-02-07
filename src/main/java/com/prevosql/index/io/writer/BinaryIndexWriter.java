@@ -41,7 +41,7 @@ class BinaryIndexWriter implements IndexWriter {
             f.createNewFile();
         } catch (IOException e) {
             LOG.fatal(e);
-            System.err.println("Failed to create com.cs5321.index file: " + e.getMessage());
+            System.err.println("Failed to create index file: " + e.getMessage());
             System.exit(1);
         }
 
@@ -95,7 +95,7 @@ class BinaryIndexWriter implements IndexWriter {
         }
 
         buffer.clear();
-//        LOG.info("Serialized com.cs5321.index node " + curr + " on page " + currIndexPage);
+//        LOG.info("Serialized index node " + curr + " on page " + currIndexPage);
     }
 
     /**

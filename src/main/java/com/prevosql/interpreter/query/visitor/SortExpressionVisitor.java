@@ -28,8 +28,8 @@ public class SortExpressionVisitor implements ExpressionVisitor {
     /**
      * Constructs a SortExpressionVisitor
      *
-     * @param leftChild Left com.cs5321.operator to sort
-     * @param rightChild Right com.cs5321.operator to sort
+     * @param leftChild Left operator to sort
+     * @param rightChild Right operator to sort
      */
     public SortExpressionVisitor(PhysicalOperator leftChild, PhysicalOperator rightChild) {
         this.leftElements = new ArrayList<>();
@@ -39,14 +39,14 @@ public class SortExpressionVisitor implements ExpressionVisitor {
     }
 
     /**
-     * @return The sort conditions corresponding to the left com.cs5321.operator
+     * @return The sort conditions corresponding to the left operator
      */
     public List<OrderByElement> getLeftElements() {
         return leftElements;
     }
 
     /**
-     * @return The sort conditions corresponding to the right com.cs5321.operator
+     * @return The sort conditions corresponding to the right operator
      */
     public List<OrderByElement> getRightElements() {
         return rightElements;
@@ -67,7 +67,7 @@ public class SortExpressionVisitor implements ExpressionVisitor {
     /**
      * Processes an equals-to expression, which by our setup is
      * a join condition. Will determine which elements belong to
-     * left com.cs5321.operator and which belong to right and add the columns
+     * left operator and which belong to right and add the columns
      * to respective lists
      *
      * @param equalsTo Equals-to expression to process
@@ -105,7 +105,7 @@ public class SortExpressionVisitor implements ExpressionVisitor {
 
             } else {
                 // the expression belongs to one of the children, and we have to examine them :(
-                // left child is the only one that can be a join com.cs5321.operator, so we check it
+                // left child is the only one that can be a join operator, so we check it
                 // we can also assume that all extraneous join conditions will be handled higher up
                 if (rightChild.getTableName().equalsIgnoreCase(rightTableName) && leftChild instanceof JoinPhysicalOperator) {
                     OrderByElement l = new OrderByElement();

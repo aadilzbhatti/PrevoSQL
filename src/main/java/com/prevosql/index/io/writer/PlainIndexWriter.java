@@ -27,7 +27,7 @@ class PlainIndexWriter implements IndexWriter {
 
         } catch (IOException e) {
             LOG.fatal(e);
-            System.err.println("Failed to create com.cs5321.index file: " + e.getMessage());
+            System.err.println("Failed to create index file: " + e.getMessage());
             System.exit(1);
         }
     }
@@ -58,7 +58,7 @@ class PlainIndexWriter implements IndexWriter {
         sb.append(s);
         sb.append("]\n");
         pw.println(sb);
-        LOG.info("Serialized com.cs5321.index node " + curr + " on page " + currIndexPage);
+        LOG.info("Serialized index node " + curr + " on page " + currIndexPage);
         pw.flush();
     }
 

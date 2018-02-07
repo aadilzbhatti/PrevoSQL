@@ -59,7 +59,7 @@ public class Table {
     }
 
     /**
-     * Gets a tuple com.cs5321.index for a column name in a table
+     * Gets a tuple index for a column name in a table
      *
      * @param columnName Name of column
      * @return Index of column information in tuple
@@ -69,10 +69,10 @@ public class Table {
     }
 
     /**
-     * Sets a tuple com.cs5321.index for a column. Only used for aliased columns/tables
+     * Sets a tuple index for a column. Only used for aliased columns/tables
      *
      * @param key A key-value pair with the table name as the key, column name as value
-     * @param index The new column com.cs5321.index
+     * @param index The new column index
      */
     private void setIndexForColumn(Pair<String, String> key, int index) {
         columnMap.put(new Pair<>(key.getKey(), key.getValue()), index);
@@ -80,10 +80,10 @@ public class Table {
     }
 
     /**
-     * Sets a tuple com.cs5321.index for a column, used for non aliased columns/tables
+     * Sets a tuple index for a column, used for non aliased columns/tables
      *
-     * @param column Name of column to set the com.cs5321.index for
-     * @param index New column com.cs5321.index
+     * @param column Name of column to set the index for
+     * @param index New column index
      */
     void setIndexForColumn(String column, int index) {
         columnMap.put(new Pair<>(tableName, column), index);

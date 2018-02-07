@@ -26,7 +26,7 @@ public class SortMergeJoinPhysicalOperator extends JoinPhysicalOperator {
     private Tuple savedLeft;
 
     /**
-     * Constructs a SMJ physical com.cs5321.operator
+     * Constructs a SMJ physical operator
      *
      * @param leftChild Left relation, sorted
      * @param rightChild Right relation, sorted

@@ -4,7 +4,7 @@ import com.prevosql.interpreter.query.plan.visitor.LogicalPlanVisitor;
 import com.prevosql.operator.logical.LogicalOperator;
 
 /**
- * Models a duplicate elimination com.cs5321.operator
+ * Models a duplicate elimination operator
  */
 public class DuplicateEliminationLogicalOperator extends UnaryLogicalOperator {
     /**
@@ -17,8 +17,8 @@ public class DuplicateEliminationLogicalOperator extends UnaryLogicalOperator {
     }
 
     /**
-     * This is used to expose the com.cs5321.operator in the PhysicalPlanExpressionVisitor
-     * so that we can convert it to a physical com.cs5321.operator
+     * This is used to expose the operator in the PhysicalPlanExpressionVisitor
+     * so that we can convert it to a physical operator
      *
      * @param visitor ExpressionVisitor to call on this object
      */

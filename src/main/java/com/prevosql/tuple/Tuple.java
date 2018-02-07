@@ -38,10 +38,10 @@ public class Tuple {
     }
 
     /**
-     * Gets a tuple value from an com.cs5321.index
+     * Gets a tuple value from an index
      *
-     * @param i Input com.cs5321.index
-     * @return Value of tuple at com.cs5321.index
+     * @param i Input index
+     * @return Value of tuple at index
      */
     public String get(int i) {
         return array[i];

@@ -13,7 +13,7 @@ public abstract class Catalog {
     static Logger LOG;
 
     /**
-     * Constructs a com.cs5321.config.catalog
+     * Constructs a config.catalog
      */
     Catalog() {
         LOG = Logger.getLogger(this.getClass());

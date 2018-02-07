@@ -17,16 +17,16 @@ public abstract class UnaryLogicalOperator implements LogicalOperator {
     }
 
     /**
-     * Sets the child for this com.cs5321.operator
+     * Sets the child for this operator
      *
-     * @param child Child com.cs5321.operator to replace current
+     * @param child Child operator to replace current
      */
     public void setChild(LogicalOperator child) {
         this.child = child;
     }
 
     /**
-     * @return The table name for this com.cs5321.operator
+     * @return The table name for this operator
      */
     @Override
     public String getTableName() {

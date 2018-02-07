@@ -1,0 +1,5 @@
+src/test/resources/project4/input
+src/test/resources/project4/output
+src/test/resources/project4/temp
+1
+1
